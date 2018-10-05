@@ -1,7 +1,11 @@
-subprojects {
+plugins {
+    id 'nebula.release' version '6.3.5'
+}
+
+subprojects { subproject ->
 
     apply plugin: 'java'
-    apply plugin: 'eclipse'
+    apply plugin: 'nebula.release'
 
     group = 'sekury'
     version = '0.0.1-SNAPSHOT'
